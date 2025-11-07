@@ -23,7 +23,12 @@ export default function FeatureCards() {
         >
           {features.map((f) => (
             <li key={f.id}>
-              <FeatureCard icon={f.icon} title={f.title} blurb={f.blurb} />
+              <FeatureCard
+                icon={f.icon}
+                title={f.title}
+                blurb={f.blurb}
+                href={f.href}
+              />
             </li>
           ))}
         </ul>
